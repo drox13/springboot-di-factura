@@ -1,6 +1,10 @@
 package com.dario.curso.springboot.di.factura.springboot_difactura.models;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Client {
+    
     private String name;
     private String lastname;
 

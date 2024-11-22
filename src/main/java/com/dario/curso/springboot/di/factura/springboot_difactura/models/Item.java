@@ -1,6 +1,7 @@
 package com.dario.curso.springboot.di.factura.springboot_difactura.models;
 
 public class Item {
+    
     private Product product;
     private Integer quantity;
 
