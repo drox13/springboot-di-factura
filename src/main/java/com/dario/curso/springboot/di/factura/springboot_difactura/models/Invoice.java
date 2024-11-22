@@ -19,7 +19,9 @@ public class Invoice {
     private List<Item> items;
 
     public int getTotal(){
-        return 0;
+        return items.stream()
+        .map(item -> item.getImporte())
+        .reduce(0, (sum, importe)-> sum + importe);
     }
 
     public Client getClient() {
