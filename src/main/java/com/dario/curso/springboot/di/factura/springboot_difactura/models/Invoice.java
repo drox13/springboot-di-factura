@@ -18,6 +18,10 @@ public class Invoice {
     @Autowired
     private List<Item> items;
 
+    public int getTotal(){
+        return 0;
+    }
+
     public Client getClient() {
         return client;
     }

@@ -11,6 +11,11 @@ public class Item {
         this.product = product;
         this.quantity = quantity;
     }
+
+    public int getImporte(){
+        return quantity * product.getPrice();
+    }
+
     public Product getProduct() {
         return product;
     }
