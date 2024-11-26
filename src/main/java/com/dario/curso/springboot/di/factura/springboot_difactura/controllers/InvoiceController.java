@@ -14,7 +14,6 @@ public class InvoiceController {
     @Autowired
     private Invoice invoice;
     
-
     @GetMapping("/show")
     public Invoice show(){
         return invoice;
