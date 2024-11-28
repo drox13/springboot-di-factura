@@ -17,12 +17,15 @@ public class InvoiceController {
     @GetMapping("/show")
     public Invoice show(){
         Invoice i = new Invoice();
+        
         Client c = new Client();
-        c.setName(i.getClient().getName());
-        c.setLastname(i.getClient().getLastname());
-        i.setClient(invoice.getClient());
+        c.setLastname(invoice.getClient().getLastname());
+        c.setName(invoice.getClient().getName());
+
+        i.setClient(c);
         i.setDescription(invoice.getDescription());
         i.setItems(invoice.getItems());
+
         return i;
     }
 

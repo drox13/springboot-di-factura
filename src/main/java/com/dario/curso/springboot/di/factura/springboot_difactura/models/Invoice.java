@@ -68,7 +68,4 @@ public class Invoice {
     public void setItems(List<Item> items) {
         this.items = items;
     }
-
-    
-
 }
